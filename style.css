@@ -1,0 +1,465 @@
+/* font-family: 'Be Vietnam Pro', sans-serif; */
+
+/* Color Code
+#913bff
+#00284E
+#010d4c
+#ffffff
+#0066ff
+#0043a8 */
+
+
+/* ##############Common CSS############# */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body h1 h2 h3 h4 h5 h6 p div span a b {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+p{
+    margin-bottom: 0px;
+}
+
+/* ##################Header Section Start################# */
+
+.logo h2{
+    color: #010d4c;
+    font-weight: 700;
+}
+
+.menu li{
+    margin-right: 2rem;
+}
+.menu li a{
+    color: #010d4c;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out .4s;
+    
+}
+.menu li a:hover{
+    color: #913bff !important;
+}
+
+.menu li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0%;
+    height: 2px;
+    background: #913bff
+    ;
+    margin-left: 5px;
+    transition: .4s;
+
+}
+.menu li a:hover:after{
+    width: 90%;
+}
+
+.number p{
+    font-size: 18px;
+    color: #515faa !important;
+}
+
+.number a{
+    font-size: 16px;
+}
+
+
+/* <!-- #################### Header Section End ######################## --> */
+
+
+/* <!-- #################### Bannar Section Start ######################## --> */
+
+.bannar-section{
+    background: url(images/pexels-hasan-albari-1229861.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.bannar-section h1{
+    color: #fff;
+    font-size: 100px;
+
+}
+
+.bannar-section p{
+    color: #fff;
+    font-size: 30px;
+}
+
+/* <!-- #################### Bannar Section End ######################## --> */
+
+
+
+/* <!-- #################### CountDown Section Start ######################## --> */
+
+.count-down h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+.count-down p{
+    font-weight: 600;
+    color: #919191;
+    font-size: 20px;
+}
+
+/* <!-- #################### Products Section Start ######################## --> */
+
+.product-section{
+    background: #cecece;
+}
+
+.product-section h1{
+    font-size: 4rem;
+ }
+
+ /* ####### Common Card ###### */
+
+.common-card{
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    transition: all ease-in-out .4s;
+}
+.common-card h4{
+    color: #913bff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.common-card h3{
+    font-weight: 500;
+    transition: all ease-in-out .3s;
+}
+.common-card img{
+    height: 300px;
+    position: relative;
+}
+.common-card:hover{
+    transform: translateY(-10px);
+}
+
+.common-card h3:hover{
+    color: #913bff;
+}
+
+.product-section h2{
+    color: #8b8b8b;
+}
+.common-card::after{
+    content: "\f061";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 0px;
+    height: 0px;
+    border-radius: 100px 100px 0px 100px;
+    background-color: #913bff;
+    position: absolute;
+    right: -20px;
+    bottom: 136px;
+    transition: all ease-in-out .3s;
+    font-size: 5px;
+}
+.common-card:hover:after{
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+}
+
+/* <!-- #################### Products Section End ######################## --> */
+
+
+/* <!-- #################### Features Section Start ######################## --> */
+.features-section{
+    background-color: #f8f9fa;
+}
+.features-section h1{
+    font-weight: 400;
+}
+.features-section h5{
+    color: #8b8b8b;
+}
+
+
+.features-card{
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, .1);
+    padding: 40px 20px 40px 30px;
+    border-radius: 10px;
+    height: 18rem;
+    transition: all ease-in-out .4s;
+}
+.features-card i{
+    color: #913bff;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+.features-card h3{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #010d4c;
+}
+.features-card p{
+    color: #8b8b8b;
+    font-weight: 400;
+}
+.features-card:hover{
+    transform: translateY(-10px);
+}
+/* <!-- #################### Features Section End ######################## --> */
+
+/* <!-- #################### Solution Section Start ######################## --> */
+
+.solution-section{
+    background: url(images/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0px;
+}
+.solution-left h3{
+   
+}
+
+.solution-left h1{
+    font-size: 65px;
+}
+.solution-left p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #525151;
+}
+.solution-section img{
+    padding-left: 5rem;
+}
+/* <!-- #################### Solution Section End ######################## --> */
+
+
+/* <!-- #################### Item Section Start ######################## --> */
+
+.item{
+   background:  #cecece;
+   font-size: 20px;
+   color: #010d4c;
+}
+.item p{
+    font-weight: 500;
+}
+
+/* <!-- #################### Item Section End ######################## --> */
+
+
+/* <!-- #################### Pricing Section Start ######################## --> */
+
+.pricing-section {
+    background: url(images/background6.jpg);
+    background-position: 16px -35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pricing-section h1{
+    font-weight: 600;
+    font-size: 4rem;
+}
+.pricing-section h1 b{
+    font-weight: 700;
+}
+.pricing-section p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.price-card{
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, .1);
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.price-card p{
+    padding-bottom: 30px;
+}
+
+.price-card h6{
+    color: #919191;
+}
+.card-btn{
+    padding: 10px 100px;
+}
+
+.pc-2-btn:hover{
+    background: #913bff !important;
+}
+/* <!-- #################### Pricing Section End ######################## --> */
+
+/* <!-- #################### Review Section Start ######################## --> */
+
+.review-section{
+    background: url(images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 225px 0px;
+}
+.review-comma{
+    display: flex;
+    justify-content: center;
+}
+
+/* <!-- #################### Review Section End ######################## --> */
+
+
+/* <!-- #################### Join Section Start ######################## --> */
+
+.join-section{
+    background: url(images/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+.join-btn a{
+    color: #7c7c7c;
+    background-color: #fff;
+    padding: 20px 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all ease-in-out .3s;
+    position: relative;
+}
+.join-btn a:hover{
+    background-color: #e2e2e2;
+    color: #2c2c2c;
+}
+
+.join-btn a:hover:after{
+    visibility: visible;
+}
+
+.join-btn a::after{
+    content: "";
+    background-color: #ffffff;
+    height: 20px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 55px;
+    animation: join-animation .8s ease-in infinite;
+    visibility: hidden;
+    opacity: .3;
+}
+
+    @keyframes join-animation {
+        0% {
+              transform: scale(1.1)
+        }
+
+        100% {
+          transform: scale(3)
+        }
+      }
+
+
+/* <!-- #################### Join Section End ######################## --> */
+
+
+
+/* <!-- #################### Subscribe Section Start ######################## --> */
+
+.subs-section{
+    background: url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+#email{
+    outline: none;
+    border: none;
+    background: #ffffff;
+    padding: 17px 70px 17px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px .8px rgba(0, 0, 0, .1);
+}
+#submit{
+    outline: none;
+    border: none;
+    background: #0066ff;
+    color: #fff;
+    padding: 15px 50px;
+    border-radius: 10px;
+    transition: all ease-in-out .2s;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background: #0043a8;
+}
+.subs-right:hover:after{
+    visibility: visible;
+}
+
+.subs-right::after {
+    content: "";
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 84px;
+    right: 80px;
+    border-radius: 50%;
+    opacity: .3;
+    animation: subs-animation .8s ease-in infinite;
+    overflow: hidden;
+    visibility: hidden;
+    cursor: pointer;
+}
+.subs-right{
+    position: relative;
+}
+@keyframes subs-animation {
+    0% {
+          transform: scale(1.1)
+    }
+
+    100% {
+      transform: scale(5)
+    }
+  }
+
+/* <!-- #################### Subscribe Section End ######################## --> */
+
+.footer-section{
+    background-color: #fdffff;
+    padding: 20px 0px;
+    color: #6b83a8;
+}
